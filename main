@@ -13,7 +13,7 @@ int main()
 
     Invoice invoice1( pn,pd,qy,p);
 
-    cout << "Yodhe hardware store"<<endl;
+    cout << "Hardware store"<<endl;
 
     cout << "Part Number: ";
     getline(cin, pn);
