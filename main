@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include "Invoice.h"
+using namespace std;
+
+
+int main()
+{
+    string pn;
+    string pd;
+    int qy=0;
+    int p=0;
+
+    Invoice invoice1( pn,pd,qy,p);
+
+    cout << "Yodhe hardware store"<<endl;
+
+    cout << "Part Number: ";
+    getline(cin, pn);
+    invoice1.set_partNumber(pn);
+    cout << "Part Description: ";
+    getline(cin, pd);
+    invoice1.set_partDescription(pd);
+    cout << "Quantity: ";
+    cin >> qy;
+    invoice1.set_quantity(qy);
+    cout << "Price: ";
+    cin >> p;
+    invoice1.set_Price(p);
+
+    cout << "Part Number: " << invoice1.get_partNumber()<<endl;
+    cout << "Part Description: " << invoice1.get_partDescription() << endl;
+    cout << "Quantity: " << invoice1.get_quantity() << endl;
+    cout << "Price: " << invoice1.get_Price() << endl;
+    cout << "Total: " << invoice1.getInvoiceAmount() << endl;
+
+    return 0;
+}
