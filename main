@@ -28,7 +28,7 @@ int main()
     cin >> p;
     invoice1.set_Price(p);
 
-    cout << "Part Number: " << invoice1.get_partNumber()<<endl;
+    cout << "\nPart Number: " << invoice1.get_partNumber()<<endl;
     cout << "Part Description: " << invoice1.get_partDescription() << endl;
     cout << "Quantity: " << invoice1.get_quantity() << endl;
     cout << "Price: " << invoice1.get_Price() << endl;
